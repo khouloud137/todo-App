@@ -1,38 +1,97 @@
 .App {
-  text-align: center;
+  background-color: #4e77a3;
+  height: 100vh;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task {
+  border: none;
+  outline: none;
+  margin: auto;
+  border-bottom: 1px solid #20d0d0;
+  background-color: transparent;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 4px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todoList {
+  box-sizing: border-box;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px;
+}
+input::placeholder {
+  color: #20d0d0;
+}
+.cards-todoItem {
+  /* border: 1px solid black; */
+  width: 400px;
+  height: 100px;
+  /* background-color: ; */
+  box-shadow: rgba(55, 51, 51, 0.531) 0px -23px 25px 0px inset,
+    rgba(255, 254, 254, 0.15) 0px -36px 30px 0px inset,
+    rgba(255, 249, 249, 0.1) 0px -79px 40px 0px inset,
+    rgba(236, 230, 230, 0.06) 0px 2px 1px,
+    rgba(255, 252, 252, 0.047) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  margin-top: 20px;
+  background-color: #b57b4a;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.task-input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-bottom: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container > span {
+  margin-bottom: 100px;
+  color: black;
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.card-icone {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.filter-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 30px;
+}
+.btns {
+  background-color: #96b1c6;
+  padding: 10px;
+}
+.add-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 450px;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.btnadd {
+  all: unset;
 }
